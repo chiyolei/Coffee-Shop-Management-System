@@ -33,12 +33,12 @@ the management software by using the sign-out option. Additionally, a user can m
 
 --- 
 
-###### Here are some images showing this project's features
+_Here are some images showing this project's features_
 
 <br/>
 
-![Sign IN](https://github.com/nayemuddinn/Coffee-Shop-Management-System/assets/126597905/81f4e46e-6a6f-4b22-b1b1-0aa244e55ec9)
 
+![Sign IN](https://github.com/nayemuddinn/Coffee-Shop-Management-System/assets/126597905/eac1d590-77d4-4c84-b7fa-f022f3baf858)
 **User Login:**   User input their credentials on the software's 
 login form. Employees and admins can both log in from here.The information is compared with all the user 
 credentials on the database. When a match is found, the system will 
@@ -46,8 +46,7 @@ authenticate user and grant him access to the software. If there is no match, th
 
 <br/>
 
-![Sign up](https://github.com/nayemuddinn/Coffee-Shop-Management-System/assets/126597905/6588fe71-d06c-4b32-8739-33fe37f818cd)
- 
+![Sign up](https://github.com/nayemuddinn/Coffee-Shop-Management-System/assets/126597905/b1374bc0-6844-4540-9ca6-99359d78f8c2)
 **New User Registration:**  It enables any shop employee to 
 set up a personal account to use the system. The staff member then required 
 to enter his basic information, username, and password in 
@@ -55,16 +54,14 @@ order to create a new account
 
 <br/>
 
-![reset password](https://github.com/nayemuddinn/Coffee-Shop-Management-System/assets/126597905/007631f6-2beb-431c-894a-354989eb3e18)
-
+![reset password](https://github.com/nayemuddinn/Coffee-Shop-Management-System/assets/126597905/20d641e4-0e5b-4bcb-8421-25b78ee95763)
 **Reset Password:** Users can use their recovery PIN to reset their passwords if they lose them.
 
 
 
 <br/>
 
-![Dashboard](https://github.com/nayemuddinn/Coffee-Shop-Management-System/assets/126597905/b66e6abd-9c20-4c4d-aca8-a6c2f36e8a2f)
-
+![Database](https://github.com/nayemuddinn/Coffee-Shop-Management-System/assets/126597905/acadaa6b-8126-49b8-be53-02bbbfd2a442)
 **Dashboard:** Its primary intention is to provide information
 at-a-glance. The dashboard will sits on its own page and 
 receives information from a linked database. The 
@@ -76,7 +73,7 @@ information as well. Additionally, the time and date are displayed on the dashbo
 
 <br/>
 
-![Food Menu](https://github.com/nayemuddinn/Coffee-Shop-Management-System/assets/126597905/78ff62d2-a58a-4823-820b-c32048443507)
+![Food Menu](https://github.com/nayemuddinn/Coffee-Shop-Management-System/assets/126597905/aeadd2af-16e3-4593-afbb-944d56cb837d)
 **Food Menu:** Here, a user can control the status 
 of the food and drink availability. He can use this option to 
 set the product ID, name, and price. He can use this option 
@@ -86,50 +83,48 @@ removing older ones.
 <br/>
 
 
-![Database](https://github.com/nayemuddinn/Coffee-Shop-Management-System/assets/126597905/6113d263-21de-494b-8190-36e7f4130758)
+![Database](https://github.com/nayemuddinn/Coffee-Shop-Management-System/assets/126597905/90819a8d-368c-4ef2-94a2-0b1520eb0742)
 **Database:** The database immediately stores each modification.
 
 
 <br/>
 
-![Order](https://github.com/nayemuddinn/Coffee-Shop-Management-System/assets/126597905/258eb82a-b05b-4e94-82a1-af69c66d41e4)
+![Order](https://github.com/nayemuddinn/Coffee-Shop-Management-System/assets/126597905/f9a5c749-6a85-4f88-8d85-241584a61ea7)
 **Order:** A user may add items from the available menu of foods and beverages to an order they are placing for a customer. A total amount with an order number will be produced by the system.
 
 
 <br/>
 
-
-![Sales](https://github.com/nayemuddinn/Coffee-Shop-Management-System/assets/126597905/bc0c61df-968e-4dcf-8856-5e68101f4cd9)
+![Sales](https://github.com/nayemuddinn/Coffee-Shop-Management-System/assets/126597905/fb2f5fd2-aff5-46d2-918f-f8cc049d461c)
 **Sales:** All order information will be stored here with the date and order number.
 
 
 <br/>
 
-![Employee](https://github.com/nayemuddinn/Coffee-Shop-Management-System/assets/126597905/596b3047-91fb-4dcd-8960-d6797fb97eb8)
+![Employee](https://github.com/nayemuddinn/Coffee-Shop-Management-System/assets/126597905/6355a4bc-7210-4a69-a57e-0047586295cb)
 **Employee Information:** Each employee's basic information will be available.  Any old data can be deleted by an admin, and new employee data can be added. In the dashboard, the total number of employees will be displayed.
 
 
 <br/>
 
-![Settings](https://github.com/nayemuddinn/Coffee-Shop-Management-System/assets/126597905/f84a06e4-0a5a-4e04-964b-920811c9ea5b)
-**Setting:** The user's information can be changed in the settings. Many options, including the ability to update any user information, are available in the settings.With the exception of his username, he can update any type of information, including his password, address, and name.
+![Settings](https://github.com/nayemuddinn/Coffee-Shop-Management-System/assets/126597905/fb40fb6a-5667-44f4-afa2-4f0176b8cbd7)
+**Settings:** The user's information can be changed in the settings. Many options, including the ability to update any user information, are available in the settings.With the exception of his username, he can update any type of information, including his password, address, and name.
 
 
 <br/>
 
-![Sign out](https://github.com/nayemuddinn/Coffee-Shop-Management-System/assets/126597905/0b85b29d-475b-4530-bc99-cf752c873f23)
+![Sign out](https://github.com/nayemuddinn/Coffee-Shop-Management-System/assets/126597905/cb4d6f14-cb80-4f63-87b0-b34aa14b1e38)
 **Sign out:**  The signed-in user may sign out once the current user role has been completed. 
 
 <br/>
 
 
-![Employee login](https://github.com/nayemuddinn/Coffee-Shop-Management-System/assets/126597905/8032e71b-c999-49fa-85bb-836fac6e5537)
+![Employee login](https://github.com/nayemuddinn/Coffee-Shop-Management-System/assets/126597905/308fa4b3-16f1-4a72-a220-a3c0d8747c3a)
 **Employee Login:** The shop Employees can log in to the system using their username and password.
 
 <br/>
 
-
-![Restriction](https://github.com/nayemuddinn/Coffee-Shop-Management-System/assets/126597905/1aff117a-4dc5-4931-9b8b-2069d81c92ee)
+![Restriction](https://github.com/nayemuddinn/Coffee-Shop-Management-System/assets/126597905/dfb4c9b8-51b6-4de6-9359-43538c620c6c)
 **Restriction For Employees** An employee is only permitted access to the menu and order sections; all other areas are restricted to him. All features are only accessible to admins.
 
 
@@ -137,7 +132,7 @@ removing older ones.
 <br/>
 
 
-s
+
 ---
 
 
