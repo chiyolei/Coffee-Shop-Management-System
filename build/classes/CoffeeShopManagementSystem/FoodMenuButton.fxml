@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1000.0" styleClass="anchorpane_dashboard" stylesheets="@CSS/DashboardButton.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CoffeeShopManagementSystem.FoodMenuButtonController">
+   <children>
+      <AnchorPane layoutX="21.0" layoutY="71.0" prefHeight="246.0" prefWidth="964.0" styleClass="add_delete_anchorPane" stylesheets="@CSS/FoodMenuButton.css">
+         <children>
+            <Label layoutX="53.0" layoutY="14.0" text="Add Item" textFill="WHITE">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <TextField fx:id="productID" layoutX="139.0" layoutY="77.0" promptText="CF-" stylesheets="@CSS/FoodMenuButton.css" text="CF-">
+               <styleClass>
+                  <String fx:value="text_Field" />
+                  <String fx:value="text-fill" />
+               </styleClass></TextField>
+            <Label layoutX="58.0" layoutY="81.0" text="Product ID" textFill="WHITE" />
+            <TextField fx:id="productName" layoutX="139.0" layoutY="121.0" stylesheets="@CSS/FoodMenuButton.css">
+               <styleClass>
+                  <String fx:value="text_Field" />
+                  <String fx:value="text-fill" />
+               </styleClass></TextField>
+            <Label layoutX="58.0" layoutY="125.0" text="Product Name" textFill="WHITE" />
+            <TextField fx:id="productPrice" layoutX="139.0" layoutY="159.0" stylesheets="@CSS/FoodMenuButton.css">
+               <styleClass>
+                  <String fx:value="text_Field" />
+                  <String fx:value="text-fill" />
+               </styleClass></TextField>
+            <Label layoutX="58.0" layoutY="162.0" prefHeight="18.0" prefWidth="42.0" text="Price" textFill="WHITE" />
+            <Pane layoutX="387.0" layoutY="18.0" prefHeight="118.0" prefWidth="127.0" style="-fx-background-color: whitesmoke;">
+               <children>
+                  <ImageView fx:id="selectImage" fitHeight="118.0" fitWidth="127.0" pickOnBounds="true" preserveRatio="true" />
+               </children></Pane>
+            <JFXButton layoutX="385.0" layoutY="159.0" onAction="#ChooseProductIMG" text="Choose Product Image" textFill="WHITE" />
+            <JFXButton layoutX="371.0" layoutY="197.0" onAction="#AddProductButtonAction" prefHeight="26.0" prefWidth="102.0" styleClass="add_button" stylesheets="@CSS/FoodMenuButton.css" text="Add Product" textFill="WHITE" />
+            <Label layoutX="631.0" layoutY="14.0" prefHeight="18.0" prefWidth="127.0" text="Delete Item" textFill="WHITE">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="637.0" layoutY="91.0" text="Product ID" textFill="WHITE" />
+            <TextField fx:id="deleteProduct" layoutX="703.0" layoutY="87.0" stylesheets="@CSS/FoodMenuButton.css">
+               <styleClass>
+                  <String fx:value="text_Field" />
+                  <String fx:value="text-fill" />
+               </styleClass></TextField>
+            <JFXButton layoutX="725.0" layoutY="149.0" onAction="#DeleteProductAction" prefHeight="26.0" prefWidth="102.0" styleClass="remove_button" stylesheets="@CSS/FoodMenuButton.css" text="Delete Product" textFill="WHITE" />
+            <ChoiceBox fx:id="productType" layoutX="138.0" layoutY="206.0" prefWidth="150.0" />
+            <Label layoutX="58.0" layoutY="210.0" text="Type" textFill="WHITE" />
+            <Button layoutX="487.0" layoutY="198.0" mnemonicParsing="false" onAction="#clearButtonAction" styleClass="remove_button" text="Clear" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+      <HBox layoutX="23.0" layoutY="367.0" prefHeight="310.0" prefWidth="943.0">
+         <children>
+            <TableView fx:id="FoodAddTable" prefHeight="310.0" prefWidth="970.0" styleClass="menu_table" stylesheets="@CSS/FoodMenuButton.css">
+              <columns>
+                <TableColumn fx:id="colID" prefWidth="167.99999618530273" text="Product ID" />
+                <TableColumn fx:id="colName" minWidth="0.0" prefWidth="196.0000457763672" text="Product Name" />
+                  <TableColumn fx:id="colType" prefWidth="202.4000244140625" text="Product Type" />
+                  <TableColumn fx:id="colPrice" minWidth="0.0" prefWidth="167.199951171875" text="Product Price" />
+                  <TableColumn fx:id="colImage" prefWidth="207.2000732421875" text="Product Image" />
+              </columns>
+            </TableView>
+         </children>
+      </HBox>
+      <Pane layoutX="815.0" layoutY="13.0" prefHeight="47.0" prefWidth="171.0" styleClass="date_time">
+         <children>
+            <Label fx:id="time" alignment="TOP_RIGHT" layoutX="72.0" layoutY="4.0" prefHeight="20.0" prefWidth="85.0" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="date" alignment="TOP_RIGHT" layoutX="47.0" layoutY="23.0" prefHeight="20.0" prefWidth="111.0" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label fx:id="addedSuccess" layoutX="368.0" layoutY="326.0" prefHeight="26.0" prefWidth="242.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

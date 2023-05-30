@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1000.0" styleClass="anchorpane_dashboard" stylesheets="@CSS/DashboardButton.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CoffeeShopManagementSystem.SalesButtonController">
+   <children>
+      <Label layoutX="400.0" layoutY="69.0" text="All Sales">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Pane layoutX="812.0" layoutY="22.0" prefHeight="47.0" prefWidth="171.0" styleClass="date_time">
+         <children>
+            <Label fx:id="time" alignment="TOP_RIGHT" layoutX="72.0" layoutY="4.0" prefHeight="20.0" prefWidth="85.0" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="date" alignment="TOP_RIGHT" layoutX="47.0" layoutY="23.0" prefHeight="20.0" prefWidth="111.0" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <TableView fx:id="salesTable" layoutX="56.0" layoutY="120.0" prefHeight="408.0" prefWidth="886.0" stylesheets="@CSS/salesButton.css">
+        <columns>
+          <TableColumn fx:id="colDate" prefWidth="256.8000297546387" text="Date" />
+            <TableColumn fx:id="colOrderNo" prefWidth="323.199951171875" text="Order No" />
+          <TableColumn fx:id="colAmount" prefWidth="306.39990234375" text="Amount" />
+        </columns>
+         <styleClass>
+            <String fx:value="table-column" />
+            <String fx:value="table-row" />
+         </styleClass>
+      </TableView>
+   </children>
+</AnchorPane>

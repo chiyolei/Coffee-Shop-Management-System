@@ -1,0 +1,48 @@
+.button{
+     -fx-background-color:#0c2333;
+    -fx-text-file:WHITE;
+    -fx-background-radius:10 10 10 10;
+}
+
+
+.listview_border{
+    
+       -fx-background-color: whitesmoke;
+    -fx-border-width: 1px 1px 1px 1px;
+
+    -fx-border-style:solid;
+    -fx-border-color: #536069;
+    
+    
+}
+
+.table-row-cell:even{
+    -fx-background-color:#3277a8;
+    -fx-font-weight:bold;
+    -fx-text-fill:whitesmoke;
+}
+
+.table-row-cell:odd{
+    -fx-background-color:#1f6291;
+    -fx-font-weight:bold;
+    -fx-text-fill:whitesmoke;
+}
+
+.table-row{
+    -fx-text-fill:whitesmoke;
+}
+.table-column{
+    -fx-font-weight:bold;
+    -fx-text-fill:whitesmoke;
+}
+
+.table-column{
+    -fx-alignment: center;
+
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #42546e;
+}
+
+

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1000.0" styleClass="anchorpane_dashboard" stylesheets="@CSS/DashboardButton.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CoffeeShopManagementSystem.OrderButtonController">
+   <children>
+      <AnchorPane layoutX="605.0" layoutY="66.0" prefHeight="620.0" prefWidth="379.0" styleClass="order_anchorPane" stylesheets="@CSS/OrderButton.css">
+         <children>
+            <Label layoutX="56.0" layoutY="14.0" text="Order" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="productID" layoutX="119.0" layoutY="65.0" prefHeight="26.0" prefWidth="246.0" />
+            <Label layoutX="42.0" layoutY="69.0" text="Product ID" textFill="WHITE" />
+            <JFXButton layoutX="320.0" layoutY="108.0" onAction="#addButtonAction" prefHeight="26.0" prefWidth="46.0" styleClass="add_button" stylesheets="@CSS/OrderButton.css" text="Add" textFill="WHITE" />
+            <JFXButton layoutX="123.0" layoutY="567.0" onAction="#payButtonAction" prefHeight="26.0" prefWidth="70.0" styleClass="Pay_button" stylesheets="@CSS/OrderButton.css" text="Pay" textFill="WHITE" />
+            <JFXButton fx:id="removeButtonAction" layoutX="202.0" layoutY="567.0" onAction="#removeButtonAction" prefHeight="26.0" prefWidth="70.0" styleClass="Remove_button" stylesheets="@CSS/OrderButton.css" text="Remove" textFill="WHITE" />
+            <Label layoutX="105.0" layoutY="252.0" prefHeight="26.0" prefWidth="138.0" />
+            <Label layoutX="105.0" layoutY="281.0" prefHeight="26.0" prefWidth="138.0" />
+            <TableView fx:id="cartTable" layoutX="38.0" layoutY="151.0" prefHeight="301.0" prefWidth="286.0">
+              <columns>
+                <TableColumn fx:id="colOrderID" prefWidth="62.39996337890625" text="ID" />
+                <TableColumn fx:id="colOrderName" minWidth="0.0" prefWidth="103.1998291015625" text="Name" />
+                  <TableColumn fx:id="colOrderQuantity" prefWidth="54.39990234375" text="Quantity" />
+                  <TableColumn fx:id="colOrderPrice" prefWidth="75.0" text="Price" />
+              </columns>
+            </TableView>
+            <JFXButton layoutX="295.0" layoutY="464.0" onAction="#proceedButtonAction" prefHeight="26.0" prefWidth="70.0" styleClass="Pay_button" stylesheets="@CSS/OrderButton.css" text="Proceed" textFill="WHITE" />
+            <Label fx:id="orderNo" layoutX="130.0" layoutY="502.0" prefHeight="18.0" prefWidth="207.0" textFill="WHITE" />
+            <Label fx:id="totalAmount" layoutX="130.0" layoutY="527.0" prefHeight="18.0" prefWidth="197.0" textFill="WHITE" />
+            <JFXButton layoutX="223.0" layoutY="464.0" onAction="#clearButtonAction" prefHeight="26.0" prefWidth="57.0" styleClass="Remove_button" stylesheets="@CSS/OrderButton.css" text="Clear" textFill="WHITE" />
+            <JFXButton layoutX="266.0" layoutY="107.0" onAction="#clearButtonAction" prefHeight="26.0" prefWidth="46.0" styleClass="Remove_button" stylesheets="@CSS/OrderButton.css" text="Clear" textFill="WHITE" />
+            <Button layoutX="334.0" layoutY="253.0" mnemonicParsing="false" onAction="#increaseButtonAction" prefHeight="27.0" prefWidth="34.0" styleClass="Invoic_button" text="+" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Button layoutX="333.0" layoutY="294.0" mnemonicParsing="false" onAction="#decreaseButotnAction" prefHeight="27.0" prefWidth="34.0" styleClass="Invoic_button" text="-" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Text fill="WHITE" layoutX="45.0" layoutY="516.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Order No        :" />
+            <Text fill="WHITE" layoutX="45.0" layoutY="541.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Amount :" />
+         </children>
+      </AnchorPane>
+      <Pane layoutX="814.0" layoutY="10.0" prefHeight="47.0" prefWidth="171.0" styleClass="date_time">
+         <children>
+            <Label fx:id="time" alignment="TOP_RIGHT" layoutX="72.0" layoutY="4.0" prefHeight="20.0" prefWidth="85.0" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="date" alignment="TOP_RIGHT" layoutX="47.0" layoutY="23.0" prefHeight="20.0" prefWidth="111.0" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <TableView fx:id="MenuTable" layoutX="33.0" layoutY="65.0" prefHeight="620.0" prefWidth="506.0" stylesheets="@CSS/OrderButton.css">
+        <columns>
+          <TableColumn fx:id="colID" prefWidth="96.79999160766602" text="Product Code" />
+            <TableColumn fx:id="colName" prefWidth="143.1999969482422" text="Product Name" />
+            <TableColumn fx:id="colImage" prefWidth="188.79998779296875" text="Product" />
+            <TableColumn fx:id="colPrice" prefWidth="75.0" text="Price" />
+        </columns>
+         <styleClass>
+            <String fx:value="table-view" />
+            <String fx:value="table-row-cell" />
+            <String fx:value="table-column" />
+         </styleClass>
+      </TableView>
+      <JFXButton layoutX="549.0" layoutY="363.0" onAction="#addButtonAction" prefHeight="26.0" prefWidth="46.0" styleClass="add_button" stylesheets="@CSS/OrderButton.css" text="Add" textFill="WHITE" />
+   </children>
+</AnchorPane>

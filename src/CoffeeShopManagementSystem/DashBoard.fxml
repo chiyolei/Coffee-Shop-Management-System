@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CoffeeShopManagementSystem.DashBoardController">
+   <children>
+      <VBox prefHeight="700.0" prefWidth="200.0">
+         <children>
+            <AnchorPane prefHeight="700.0" prefWidth="178.0" styleClass="sidebar_dashboard" stylesheets="@CSS/Dashboard.css">
+               <children>
+                  <Pane layoutX="47.0" prefHeight="114.0" prefWidth="146.0">
+                     <children>
+                        <ImageView fitHeight="120.0" fitWidth="122.0" layoutX="6.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Image/logo.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Pane layoutY="119.0" prefHeight="46.0" prefWidth="208.0">
+                     <children>
+                        <FontAwesomeIcon fill="#817f7f" glyphName="USER" layoutX="20.0" layoutY="35.0" size="3em" text="" wrappingWidth="27.2000093460083" />
+                        <Label fx:id="showUsername" alignment="TOP_LEFT" layoutX="67.0" layoutY="1.0" prefHeight="26.0" prefWidth="102.0" textFill="#b9b9b9">
+                           <font>
+                              <Font name="System Bold" size="17.0" />
+                           </font></Label>
+                        <Label fx:id="logintype" layoutX="69.0" layoutY="24.0" prefHeight="17.0" prefWidth="134.0" textFill="#b9b9b9" />
+                     </children>
+                  </Pane>
+                  <JFXButton layoutX="14.0" layoutY="220.0" onAction="#dashboardButtonAction" prefHeight="46.0" prefWidth="166.0" styleClass="dashboard_button" stylesheets="@CSS/Dashboard.css" text="Dashboard" textFill="#b9b9b9">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIcon fill="#817f7f" glyphName="LAPTOP" size="1.5em" />
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton layoutX="14.0" layoutY="484.0" onAction="#employeeButtonAction" prefHeight="46.0" prefWidth="166.0" styleClass="dashboard_button" stylesheets="@CSS/Dashboard.css" text="Employee" textFill="#b9b9b9">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <padding>
+                        <Insets right="10.0" />
+                     </padding>
+                     <graphic>
+                        <FontAwesomeIcon fill="#817f7f" glyphName="USER" size="1.5em" />
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton layoutX="14.0" layoutY="419.0" onAction="#salesButtonAction" prefHeight="46.0" prefWidth="166.0" styleClass="dashboard_button" stylesheets="@CSS/Dashboard.css" text="Sales" textFill="#b9b9b9">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <padding>
+                        <Insets right="35.0" />
+                     </padding>
+                     <graphic>
+                        <FontAwesomeIcon fill="#817f7f" glyphName="QRCODE" size="1.5em" />
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton layoutX="14.0" layoutY="355.0" onAction="#orderButtonAction" prefHeight="46.0" prefWidth="166.0" styleClass="dashboard_button" stylesheets="@CSS/Dashboard.css" text="Order" textFill="#b9b9b9">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <padding>
+                        <Insets right="35.0" />
+                     </padding>
+                     <graphic>
+                        <FontAwesomeIcon fill="#817f7f" glyphName="CLIPBOARD" size="1.5em" />
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton layoutX="14.0" layoutY="289.0" onAction="#FoodMenuButtonAction" prefHeight="46.0" prefWidth="166.0" styleClass="dashboard_button" stylesheets="@CSS/Dashboard.css" text="Food Menu" textFill="#b9b9b9">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIcon fill="#817f7f" glyphName="CUBES" size="1.2em" />
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="signOutBtn" layoutX="14.0" layoutY="611.0" onAction="#signOutButtonAction" prefHeight="46.0" prefWidth="166.0" styleClass="dashboard_button" stylesheets="@CSS/Dashboard.css" text="Sign out" textFill="#b9b9b9">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <padding>
+                        <Insets right="10.0" />
+                     </padding>
+                     <graphic>
+                        <FontAwesomeIcon fill="#817f7f" glyphName="COG" size="1.5em" />
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton layoutX="15.0" layoutY="547.0" onAction="#settingsButtonAction" prefHeight="46.0" prefWidth="166.0" styleClass="dashboard_button" stylesheets="@CSS/Dashboard.css" text="Settings" textFill="#b9b9b9">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <padding>
+                        <Insets right="10.0" />
+                     </padding>
+                     <graphic>
+                        <FontAwesomeIcon fill="#817f7f" size="1.5em" />
+                     </graphic>
+                  </JFXButton>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+      <VBox fx:id="mainContent" prefHeight="700.0" prefWidth="1000.0" styleClass="vbox_dashboard" stylesheets="@CSS/Dashboard.css" />
+   </children>
+</HBox>

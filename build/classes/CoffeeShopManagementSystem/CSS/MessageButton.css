@@ -1,0 +1,35 @@
+.show_msg_pane{
+    -fx-background-color: whitesmoke;
+    -fx-border-width: 1px 1px 1px 1px;
+    -fx-border-radius:15px;
+    -fx-background-radius: 15px;
+    -fx-border-style:solid;
+    -fx-border-color: #536069;
+    
+}
+
+
+.button{
+    
+    -fx-background-color:#0c2333;
+    -fx-text-file:WHITE;
+    -fx-background-radius:10 10 10 10;
+    
+}
+
+.add_button{
+    
+    -fx-background-color:#0e4707;
+    -fx-text-file:WHITE;
+    -fx-background-radius:10 10 10 10;
+    
+}
+
+.clear_button{
+    
+    -fx-background-color:#732210;
+    -fx-text-file:WHITE;
+    -fx-background-radius:10 10 10 10;
+    
+}
+

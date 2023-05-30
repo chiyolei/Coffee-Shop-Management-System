@@ -1,0 +1,61 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Jan 28, 2023, 2:03:09 PM
+    Author     : ASUS
+*/
+
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Jan 28, 2023, 1:56:31 PM
+    Author     : ASUS
+*/
+
+.sidebar_dashboard{
+    
+    -fx-background-color: #353a56;
+    -fx-border-width: 1px 1px 1px 1px;
+    -fx-border-radius:0px 15px 15px 0px;
+    -fx-background-radius: 0px 15px 15px 0px;
+    -fx-border-style:solid;
+    
+    
+}
+
+
+.dashboard_button{
+    
+    -fx-background-color: #252730;
+    -fx-border-width: 1px 1px 1px 1px;
+    -fx-border-radius:15px;
+    -fx-background-radius: 15px;
+    -fx-border-style:solid;
+    -fx-border-color: #10182e;
+    
+    
+}
+
+.vbox_dashboard{
+    
+    -fx-background-color: #d1d4e3;
+    -fx-border-width: 1px 1px 1px 1px;
+    -fx-border-radius:15px 0px 0px 15px;
+    -fx-background-radius: 15px 0px 0px 15px;
+    -fx-border-style:solid;
+    
+    
+}
+
+.date_time{
+    -fx-background-color: linear-gradient(to right bottom,#8cabbd,#f76b2f);
+    -fx-border-width: 1px 1px 1px 1px;
+    -fx-border-radius:15px 0px 0px 15px;
+    -fx-background-radius: 15px 0px 0px 15px;
+    -fx-border-color: #748CF1;
+    
+}

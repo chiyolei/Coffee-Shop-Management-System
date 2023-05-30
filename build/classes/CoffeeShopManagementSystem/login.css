@@ -1,0 +1,36 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+
+
+
+.parent_fxml{
+    -fx-background-color:transparent;
+}
+.text_Field{
+    -fx-background-color:transparent;
+    -fx-border-color:#DEDEE4;
+    -fx-border-width:0px 0px 1px 0px;
+}
+
+.tf{
+   -fx-background-color:transparent;
+}
+
+.Sign_In_Btn{
+    -fx-background-color:#b77a76;
+    -fx-text-file:WHITE;
+    -fx-background-radius:12 12 12 12;
+}
+
+.login_Page_btn{
+    
+    -fx-background-color:transparent;
+    -fx-background-radius:5px;
+    -fx-border-color:#cccccc;
+    -fx-border-radius:5px;
+    -fx-border-width:1px;
+    -fx-border-fill:whitesmoke;
+    
+}
