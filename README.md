@@ -61,7 +61,7 @@ order to create a new account
 
 <br/>
 
-![Database](https://github.com/nayemuddinn/Coffee-Shop-Management-System/assets/126597905/acadaa6b-8126-49b8-be53-02bbbfd2a442)
+![Dashboard](https://github.com/nayemuddinn/Coffee-Shop-Management-System/assets/126597905/7e550848-16fe-4f66-ab90-406fa159efe4)
 **Dashboard:** Its primary intention is to provide information
 at-a-glance. The dashboard will sits on its own page and 
 receives information from a linked database. The 
